@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Schedule</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	<link rel="pingback" href="http://mdce.dockmaster.dev/xmlrpc.php"/>
+	<link rel="alternate" type="application/rss+xml" title="Marine Dealer Conference &raquo; Feed" href="http://mdce.dockmaster.dev/feed/"/>
+	<link rel="alternate" type="application/rss+xml" title="Marine Dealer Conference &raquo; Comments Feed" href="http://mdce.dockmaster.dev/comments/feed/"/>
+	<link rel="alternate" type="application/rss+xml" title="Marine Dealer Conference &raquo; Schedule Comments Feed" href="http://mdce.dockmaster.dev/schedule/feed/"/>
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js?ver=3.4.2'></script>
+	<script type='text/javascript' src='http://mdce.dockmaster.dev/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+
+	<link rel='prev' title='Activate' href='http://mdce.dockmaster.dev/activate/'/>
+	<link rel='next' title='Details' href='http://mdce.dockmaster.dev/details/'/>
+	<link rel='canonical' href='http://mdce.dockmaster.dev/schedule/'/>
+	
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mdce.css" />
+
+	<style type="text/css">.recentcomments a{display:inline!important;padding:0!important;margin:0!important}</style>
+	<!-- Dynamic Widgets v1.5.2 by QURL - http://www.qurl.nl //-->
+
+	<link rel=stylesheet href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#mdce-home img").load(function() {
+				$(this).wrap(function() {
+					return'<span class="image-wrap '+$(this).attr('class')+'" style="position:relative; display:inline-block; background:url('+$(this).attr('src')+') no-repeat center center; width: '+$(this).width()+'px; height: '+$(this).height()+'px;" />';
+					});
+				$(this).css("opacity","0");
+				});
+			});
+	</script>
+
+	<script language="javascript" type="text/javascript">
+		function closediv(divid) {
+			document.getElementById(divid).style.display='none';
+			document.getElementById('fadout').style.display='none';
+			}
+	</script>
+
+	<style type="text/css">.ui-content{padding:1px}</style>
+
+</head>
+
+<body class="page page-id-15 page-template page-template-schedule-php">
+	<div data-role="page" data-theme="a" id="mdce-home">
+		<div data-role="header">
+			<h1>Schedule</h1>
+		</div><!-- /header -->
+		<div data-role="content" data-theme="a">
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>Monday</h3>
+				<p>list of Events:</p>
+				<ul data-role="listview" data-inset="true" data-theme="a">
+					<li>
+						<a href="http://mdce.dockmaster.dev/details?id=1&type=schedule">
+							<h1 style="font-size:18px;">Tips for President</h1>
+							<h1 style="font-size:14px;">8:00 A.M. to 9:00 P.M.</h1>
+							<h1 style="font-size:14px;">America</h1>
+						</a>
+					</li>
+					<li>
+						<a href="http://mdce.dockmaster.dev/details?id=3&type=schedule">
+							<h1 style="font-size:18px;">Test_New</h1>
+							<h1 style="font-size:14px;">7:00 to 8:00</h1>
+							<h1 style="font-size:14px;"></h1>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /content -->
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="add?type=Schedule" data-role="button">My Schedule</a>
+			<a href="http://mdce.dockmaster.dev/schedule" data-role="button">Line-Up</a>
+		</div>
+		<p><a href="http://mdce.dockmaster.dev" data-direction="reverse" data-role="button" data-theme="b">Back</a></p>
+		<div data-role="footer" class="ui-bar" style="text-align:center;">Powered by Sponsors</div>
+	</div><!-- data role content-->
+</body>
+</html>

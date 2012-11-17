@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MDCE Mobile Site</title>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mdce.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script src="js/swipe.min.js">  // Swipe script </script>
+    <script src="js/mdce.js"></script>
+    <script type="text/javascript">  // Function to output HTML for card style button images
+        $(document).ready(function() {
+            $("#mdce-home img").load(function() {
+                $(this).wrap(function() {
+                    return '<span class="image-wrap ' + $(this).attr('class') + '" style="position:relative; display:inline-block; background:url(' + $(this).attr('src') + ') no-repeat center center; width: ' + $(this).width() + 'px; height: ' + $(this).height() + 'px;" />';
+                });
+                $(this).css("opacity","0");
+            });
+        });
+    </script>
+</head>
+    
+<body><!-- Home -->
+    <div data-role="page" class="type-home" id="mdce-home" >
+        <div data-role="content">
+            <div class="content-primary" data-theme="c">
+                <div id="mdce-header">
+                    <div id="mdce-logo">
+<!--                        <p id="mdce-search"></p> -->
+<!--                        <p id="mdce-info"></p> -->
+                    </div>
+                </div><!-- /header -->
+
+                <div class="box-top-border card" style="text-align:center">
+                    <a href="schedule.html"><img src="images/buttons/schedule.png" /></a>
+                    <a href="index.html"><img src="images/buttons/speakers.png" /></a>
+                    <a href="index.html"><img src="images/buttons/exhibitors.png" /></a>
+                </div>
+                <div class="box-bottom-border card" style="text-align:center">
+                    <a href="index.html"><img src="images/buttons/sponsors.png" /></a>
+                    <a href="index.html"><img src="images/buttons/social.png" /></a>
+                    <a href="maps.html"><img src="images/buttons/maps.png" /></a>
+                </div>
+
+                <div>
+                    <p data-mce-style="text-align: center;" style="text-align: center;">
+                        <strong>
+                            <span style="font-size: x-small; font-family: verdana, geneva; " data-mce-style="font-size: x-small; font-family: verdana, geneva;">
+                                <span id="_mce_caret" data-mce-bogus="1"><span data-mce-bogus="1"</span></span>
+                                Powered by Sponsors
+                            </span>
+                        </strong>
+                    </p>
+                </div>
+                <div id="slider" class="box-no-border card" style="text-align:center">
+                    <ul>
+                        <li style='display:block'><img src="images/sponsors/adp.png" alt="ADP" /></li>
+                        <li style='display:none'><img src="images/sponsors/ari.png" alt="ARI" /></li>
+                        <li style='display:none'><img src="images/sponsors/forestriver.png" alt="Forest River" /></li>
+                        <li style='display:none'><img src="images/sponsors/manheim.png" alt="Manheim" /></li>
+                        <li style='display:none'><img src="images/sponsors/regal.png" alt="Regal" /></li>
+                        <li style='display:none'><img src="images/sponsors/volvo.png" alt="Volvo" /></li>
+                    </ul>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div>
+                            <p style="text-align: right; ">
+                                <span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: x-small; "
+                                data-mce-style="font-family: tahoma, arial, helvetica, sans-serif; font-size: x-small;">
+                                    <b>
+                                        Mobile site by: &nbsp;
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div style="">
+                            <img style="width: 175px; height: 31px" src="images/dockmaster-trans-175x32.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+   window.mySwipe = new Swipe(document.getElementById('slider'), {
+        startSlide: 0,
+        speed: 300,
+        auto: 3000,
+        callback: function(event, index, elem) {
+            // do more stuff
+        }
+    });
+    </script>
+</html>
